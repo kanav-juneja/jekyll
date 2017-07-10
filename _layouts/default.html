@@ -1,0 +1,15 @@
+{% include header.html %}
+	
+	<main>
+		{% if page.title == "Home" %}
+			<img src="{{page.img}}" class="banner" />
+		{% endif %}
+
+		<h1 class="{%if page.title == 'Home' %}center{% endif %}">
+			{{ page.title}}
+		</h1>
+
+		{{ content }}
+	</main>
+
+{% include footer.html %}

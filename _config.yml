@@ -1,0 +1,22 @@
+title: Learning Jekyll
+
+markdown: kramdown
+
+host: localhost
+
+
+include: ['_pages']
+
+layouts_dir:     ./_layouts
+data_dir: ./_data
+plugins_dir: ./_plugins
+
+permalink:     /:title
+
+plugins: [jekyll-livereload, jekyll-babel]
+
+livereload: true
+
+sass:
+    sass_dir: _sass
+    style: compressed

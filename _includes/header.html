@@ -1,0 +1,14 @@
+<head>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body class="{{ post.title | downcase | replace:' ','-' | replace:',','' | strip_html }}{% if page.category %} category-{{ page.category }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
+
+    <nav class="navbar">
+        <ul class="nav">
+			 {% for item in site.data.nav.main %}
+				<li>
+					<a href="{{ item.url }}">{{ item.text }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+    </nav>

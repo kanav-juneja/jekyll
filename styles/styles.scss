@@ -1,0 +1,75 @@
+---
+---
+
+@font-face {
+    font-family:'regular';
+	src:url(../fonts/OpenSans-Regular.ttf);
+}
+
+html {
+	width:100%;
+	height:100%;
+
+	body {
+		width:100%;
+		height:100%;
+		margin:0;
+		padding:0;
+		display:table;
+		font-family:regular;
+
+		nav {
+			background-color:#616161;
+			float: left;
+			width:100%;
+
+			ul {
+				list-style:none;
+				float: right;
+				
+				li {
+					float:left;
+					margin-right: 1rem;
+
+					a {
+						color:#FFF;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		main {
+			float:left;
+			padding-left:2rem;
+			width:calc(100% - 2rem);
+
+			.banner {
+				display: block;
+				width:17rem;
+				margin:0 auto;
+			}
+
+			.center {
+				text-align:center;
+			}
+		}
+
+		blockquote {
+			border-left: solid 5px #616161;
+			padding-left:2rem;
+		}
+
+		footer {
+			background-color:#464646;
+			text-align:center;
+			color:#FFF;
+			height:3rem;
+			line-height:3rem;
+			float:left;
+			width:100%;
+			position:fixed;
+			bottom:0;
+		}
+	}
+}
